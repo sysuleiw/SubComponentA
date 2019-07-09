@@ -6,12 +6,8 @@
 //  Copyright © 2019 王磊. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface SubViewControllerA : ViewController
+@interface SubViewControllerA : UIViewController
 
 @end
-
-NS_ASSUME_NONNULL_END

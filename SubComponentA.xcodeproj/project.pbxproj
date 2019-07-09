@@ -15,6 +15,11 @@
 		9B3A4E0622D341030043FAB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3A4E0522D341030043FAB9 /* main.m */; };
 		9B3A4E1022D341030043FAB9 /* SubComponentAUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3A4E0F22D341030043FAB9 /* SubComponentAUITests.m */; };
 		9B3A4E1C22D341230043FAB9 /* SubViewControllerA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3A4E1B22D341230043FAB9 /* SubViewControllerA.m */; };
+		9B3A4E2622D3454E0043FAB9 /* SubComponentAFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B3A4E2422D3454E0043FAB9 /* SubComponentAFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B3A4E2922D3454E0043FAB9 /* SubComponentAFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3A4E2222D3454E0043FAB9 /* SubComponentAFramework.framework */; };
+		9B3A4E2A22D3454E0043FAB9 /* SubComponentAFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3A4E2222D3454E0043FAB9 /* SubComponentAFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9B3A4E2F22D345570043FAB9 /* SubViewControllerA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3A4E1B22D341230043FAB9 /* SubViewControllerA.m */; };
+		9B3A4E3022D345C30043FAB9 /* SubViewControllerA.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B3A4E1A22D341230043FAB9 /* SubViewControllerA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +30,28 @@
 			remoteGlobalIDString = 9B3A4DF222D341010043FAB9;
 			remoteInfo = SubComponentA;
 		};
+		9B3A4E2722D3454E0043FAB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B3A4DEB22D341010043FAB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B3A4E2122D3454E0043FAB9;
+			remoteInfo = SubComponentAFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9B3A4E2E22D3454E0043FAB9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9B3A4E2A22D3454E0043FAB9 /* SubComponentAFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9B3A4DF322D341010043FAB9 /* SubComponentA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubComponentA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +69,9 @@
 		9B3A4E1122D341030043FAB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B3A4E1A22D341230043FAB9 /* SubViewControllerA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubViewControllerA.h; sourceTree = "<group>"; };
 		9B3A4E1B22D341230043FAB9 /* SubViewControllerA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubViewControllerA.m; sourceTree = "<group>"; };
+		9B3A4E2222D3454E0043FAB9 /* SubComponentAFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SubComponentAFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B3A4E2422D3454E0043FAB9 /* SubComponentAFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubComponentAFramework.h; sourceTree = "<group>"; };
+		9B3A4E2522D3454E0043FAB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,10 +79,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B3A4E2922D3454E0043FAB9 /* SubComponentAFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9B3A4E0822D341030043FAB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B3A4E1F22D3454E0043FAB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,6 +105,7 @@
 			children = (
 				9B3A4DF522D341010043FAB9 /* SubComponentA */,
 				9B3A4E0E22D341030043FAB9 /* SubComponentAUITests */,
+				9B3A4E2322D3454E0043FAB9 /* SubComponentAFramework */,
 				9B3A4DF422D341010043FAB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +115,7 @@
 			children = (
 				9B3A4DF322D341010043FAB9 /* SubComponentA.app */,
 				9B3A4E0B22D341030043FAB9 /* SubComponentAUITests.xctest */,
+				9B3A4E2222D3454E0043FAB9 /* SubComponentAFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,7 +147,28 @@
 			path = SubComponentAUITests;
 			sourceTree = "<group>";
 		};
+		9B3A4E2322D3454E0043FAB9 /* SubComponentAFramework */ = {
+			isa = PBXGroup;
+			children = (
+				9B3A4E2422D3454E0043FAB9 /* SubComponentAFramework.h */,
+				9B3A4E2522D3454E0043FAB9 /* Info.plist */,
+			);
+			path = SubComponentAFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9B3A4E1D22D3454E0043FAB9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B3A4E3022D345C30043FAB9 /* SubViewControllerA.h in Headers */,
+				9B3A4E2622D3454E0043FAB9 /* SubComponentAFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		9B3A4DF222D341010043FAB9 /* SubComponentA */ = {
@@ -118,10 +178,12 @@
 				9B3A4DEF22D341010043FAB9 /* Sources */,
 				9B3A4DF022D341010043FAB9 /* Frameworks */,
 				9B3A4DF122D341010043FAB9 /* Resources */,
+				9B3A4E2E22D3454E0043FAB9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9B3A4E2822D3454E0043FAB9 /* PBXTargetDependency */,
 			);
 			name = SubComponentA;
 			productName = SubComponentA;
@@ -146,6 +208,24 @@
 			productReference = 9B3A4E0B22D341030043FAB9 /* SubComponentAUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		9B3A4E2122D3454E0043FAB9 /* SubComponentAFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B3A4E2B22D3454E0043FAB9 /* Build configuration list for PBXNativeTarget "SubComponentAFramework" */;
+			buildPhases = (
+				9B3A4E1D22D3454E0043FAB9 /* Headers */,
+				9B3A4E1E22D3454E0043FAB9 /* Sources */,
+				9B3A4E1F22D3454E0043FAB9 /* Frameworks */,
+				9B3A4E2022D3454E0043FAB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SubComponentAFramework;
+			productName = SubComponentAFramework;
+			productReference = 9B3A4E2222D3454E0043FAB9 /* SubComponentAFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,6 +241,9 @@
 					9B3A4E0A22D341030043FAB9 = {
 						CreatedOnToolsVersion = 10.2.1;
 						TestTargetID = 9B3A4DF222D341010043FAB9;
+					};
+					9B3A4E2122D3454E0043FAB9 = {
+						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
@@ -179,6 +262,7 @@
 			targets = (
 				9B3A4DF222D341010043FAB9 /* SubComponentA */,
 				9B3A4E0A22D341030043FAB9 /* SubComponentAUITests */,
+				9B3A4E2122D3454E0043FAB9 /* SubComponentAFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -195,6 +279,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9B3A4E0922D341030043FAB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B3A4E2022D3454E0043FAB9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -223,6 +314,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9B3A4E1E22D3454E0043FAB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B3A4E2F22D345570043FAB9 /* SubViewControllerA.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -230,6 +329,11 @@
 			isa = PBXTargetDependency;
 			target = 9B3A4DF222D341010043FAB9 /* SubComponentA */;
 			targetProxy = 9B3A4E0C22D341030043FAB9 /* PBXContainerItemProxy */;
+		};
+		9B3A4E2822D3454E0043FAB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B3A4E2122D3454E0043FAB9 /* SubComponentAFramework */;
+			targetProxy = 9B3A4E2722D3454E0043FAB9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -435,6 +539,60 @@
 			};
 			name = Release;
 		};
+		9B3A4E2C22D3454E0043FAB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NW94V2XK7K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SubComponentAFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sysuleiw.demo.SubComponentAFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B3A4E2D22D3454E0043FAB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NW94V2XK7K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SubComponentAFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sysuleiw.demo.SubComponentAFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -461,6 +619,15 @@
 			buildConfigurations = (
 				9B3A4E1822D341030043FAB9 /* Debug */,
 				9B3A4E1922D341030043FAB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B3A4E2B22D3454E0043FAB9 /* Build configuration list for PBXNativeTarget "SubComponentAFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B3A4E2C22D3454E0043FAB9 /* Debug */,
+				9B3A4E2D22D3454E0043FAB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
